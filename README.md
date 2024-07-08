@@ -8,6 +8,7 @@ This document contains SQL queries designed to address specific assessment quest
 Write a query that shows all the superheroes and the sum of their attributes, including those with no attributes. This query should return the sex, race, publisher, eye color, hair color, and skin color of each superhero.
 
 ### Answer:
+<pre>
 SELECT 
     s.superhero_name, 
     g.gender, 
@@ -33,4 +34,4 @@ GROUP BY
     c1.colour, 
     c2.colour, 
     c3.colour;
-
+  </pre>
