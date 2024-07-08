@@ -3,6 +3,12 @@
 ## Overview
 This document contains SQL queries designed to address specific assessment questions related to a superhero database. The questions focus on extracting and analyzing data on superheroes, their attributes, and their superpowers. Each section includes the SQL query, an explanation of its functionality, and key points for understanding the query's purpose and execution.
 
+#### Tool Used:
+MySQL Workbench
+
+#### Database:
+Superhero Database
+
 ## 1. Querying Superhero Attributes
 ### Question:
 Write a query that shows all the superheroes and the sum of their attributes, including those with no attributes. This query should return the sex, race, publisher, eye color, hair color, and skin color of each superhero.
