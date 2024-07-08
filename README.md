@@ -6,8 +6,7 @@ This document contains SQL queries designed to address specific assessment quest
 #### Tool Used:
 MySQL Workbench
 
-#### Database:
-Superhero Database
+#### Superhero Database
 ![](Images/table.JPG)
 
 ## 1. Querying Superhero Attributes
