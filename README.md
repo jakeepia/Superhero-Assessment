@@ -35,3 +35,16 @@ GROUP BY
     c2.colour, 
     c3.colour;
   </pre>
+
+### Explanation:
+1. Select Columns: Retrieves the superhero's name, gender, race, publisher name, eye color, hair color, and skin color.
+2. LEFT JOINs: Ensures all superheroes are included, even those with no attributes.
+3. SUM() and COALESCE(): Calculates the sum of the attribute values for each superhero, returning 0 if there are no attributes.
+4. GROUP BY: Aggregates the results by the selected columns.
+
+### Key Points:
+- Ensures inclusion of all superheroes.
+- Aggregates attribute values.
+- Handles superheroes with no attributes by returning 0.
+
+
