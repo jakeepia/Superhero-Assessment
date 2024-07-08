@@ -8,6 +8,7 @@ MySQL Workbench
 
 #### Database:
 Superhero Database
+![](table.JPG)
 
 ## 1. Querying Superhero Attributes
 ### Question:
@@ -42,6 +43,9 @@ GROUP BY
     c3.colour;
   </pre>
 
+![](sol_1.JPG)
+
+
 ### Explanation:
 1. Select Columns: Retrieves the superhero's name, gender, race, publisher name, eye color, hair color, and skin color.
 2. LEFT JOINs: Ensures all superheroes are included, even those with no attributes.
@@ -67,6 +71,8 @@ FROM superpower sp
 LEFT JOIN hero_power hp ON sp.id = hp.power_id
 GROUP BY sp.power_name;
   </pre>
+
+![](sol_2.JPG)
 
 ### Explanation:
 1. Select Columns: Retrieves the power name and the count of hero IDs.
@@ -98,6 +104,8 @@ GROUP BY r.race, sp.power_name
 ORDER BY total_heroes DESC;
   </pre>
 
+![](sol_3.JPG)
+
 ### Explanation:
 1. Select Columns: Retrieves race, power name, and count of heroes with that power.
 2. JOINS: Connects race information to superpowers.
@@ -111,11 +119,3 @@ ORDER BY total_heroes DESC;
 
 ## Conclusion
 These queries demonstrate how to extract and analyze data from a superhero database, focusing on attributes, superpowers, and their prevalence across different races. The explanations and key points provide a clear understanding of the purpose and execution of each query.
-
-
-
-
-
-
-
-
