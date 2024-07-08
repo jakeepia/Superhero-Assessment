@@ -47,6 +47,7 @@ GROUP BY
 - Aggregates attribute values.
 - Handles superheroes with no attributes by returning 0.
 
+
 ## 2. Counting Superheroes with Each Superpower
 ### Question:
 Write a query that returns the list of all superpowers and the sum of superheroes that have this superpower.
@@ -60,5 +61,55 @@ FROM superpower sp
 LEFT JOIN hero_power hp ON sp.id = hp.power_id
 GROUP BY sp.power_name;
   </pre>
+
+### Explanation:
+1. Select Columns: Retrieves the power name and the count of hero IDs.
+2. JOIN: Connects superpowers to superheroes.
+3. GROUP BY: Aggregates the count of heroes for each superpower.
+4. LEFT JOIN: Includes all superpowers, even those without heroes.
+
+### Key Points:
+- Connects superpowers to superheroes.
+- Aggregates hero count per superpower.
+- Ensures all superpowers are included.
+
+
+## 3. Finding the Most Prevalent Superpower by Race
+### Question:
+Write a query to return the list of races and which superpower is the most prevalent in each race of superhero.
+
+### Answer:
+<pre>
+SELECT 
+    r.race,
+    sp.power_name,
+    COUNT(hp.hero_id) AS total_heroes
+FROM race r
+JOIN superhero s ON r.id = s.race_id
+JOIN hero_power hp ON s.id = hp.hero_id
+JOIN superpower sp ON hp.power_id = sp.id
+GROUP BY r.race, sp.power_name
+ORDER BY total_heroes DESC;
+  </pre>
+
+### Explanation:
+1. Select Columns: Retrieves race, power name, and count of heroes with that power.
+2. JOINS: Connects race information to superpowers.
+3. GROUP BY: Counts the number of heroes with each superpower for each race.
+4. ORDER BY: Orders by the count of heroes descending to highlight the most prevalent superpower.
+
+### Key Points:
+- Connects race to superpowers.
+- Aggregates hero count by race and superpower.
+- Highlights the most prevalent superpower for each race.
+
+## Conclusion
+These queries demonstrate how to extract and analyze data from a superhero database, focusing on attributes, superpowers, and their prevalence across different races. The explanations and key points provide a clear understanding of the purpose and execution of each query.
+
+
+
+
+
+
 
 
