@@ -47,4 +47,18 @@ GROUP BY
 - Aggregates attribute values.
 - Handles superheroes with no attributes by returning 0.
 
+## 2. Counting Superheroes with Each Superpower
+### Question:
+Write a query that returns the list of all superpowers and the sum of superheroes that have this superpower.
+
+### Answer:
+<pre>
+SELECT 
+    sp.power_name,
+    COUNT(hp.hero_id) AS total_heroes
+FROM superpower sp
+LEFT JOIN hero_power hp ON sp.id = hp.power_id
+GROUP BY sp.power_name;
+  </pre>
+
 
