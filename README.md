@@ -8,7 +8,7 @@ MySQL Workbench
 
 #### Database:
 Superhero Database
-![](table.JPG)
+![](Images/table.JPG)
 
 ## 1. Querying Superhero Attributes
 ### Question:
@@ -43,7 +43,7 @@ GROUP BY
     c3.colour;
   </pre>
 
-![](sol_1.JPG)
+![](Images/sol_1.JPG)
 
 
 ### Explanation:
@@ -72,7 +72,7 @@ LEFT JOIN hero_power hp ON sp.id = hp.power_id
 GROUP BY sp.power_name;
   </pre>
 
-![](sol_2.JPG)
+![](Images/sol_2.JPG)
 
 ### Explanation:
 1. Select Columns: Retrieves the power name and the count of hero IDs.
@@ -104,7 +104,7 @@ GROUP BY r.race, sp.power_name
 ORDER BY total_heroes DESC;
   </pre>
 
-![](sol_3.JPG)
+![](Images/sol_3.JPG)
 
 ### Explanation:
 1. Select Columns: Retrieves race, power name, and count of heroes with that power.
