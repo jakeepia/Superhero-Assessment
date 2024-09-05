@@ -1,7 +1,7 @@
 # SQL-Assessment-Solutions-for-Superhero-Database
 
 ## Overview
-This presentation contains SQL queries designed to address specific assessment questions related to a superhero database. The questions focus on extracting and analyzing data on superheroes, their attributes, and their superpowers. Each section includes the SQL query, an explanation of its functionality, and key points for understanding the query's purpose and execution.
+This presentation showcases SQL queries crafted to tackle specific assessment questions concerning a superhero database. The focus is on extracting and analyzing data related to superheroes, their attributes, and their superpowers. Each section includes the SQL query, an explanation of its functionality, and key points for understanding the query's purpose and execution.
 
 **Tool:** MySQL Workbench
 
