@@ -3,17 +3,15 @@
 ## Overview
 This presentation contains SQL queries designed to address specific assessment questions related to a superhero database. The questions focus on extracting and analyzing data on superheroes, their attributes, and their superpowers. Each section includes the SQL query, an explanation of its functionality, and key points for understanding the query's purpose and execution.
 
-#### Tool Used:
-MySQL Workbench
+**Tool:** MySQL Workbench
 
 #### Superhero Database
 ![](Images/table.JPG)
 
 ## 1. Querying Superhero Attributes
-### Question:
+### Problem Statement:
 Write a query that shows all the superheroes and the sum of their attributes, including those with no attributes. This query should return the sex, race, publisher, eye color, hair color, and skin color of each superhero.
 
-### Answer:
 <pre>
 SELECT 
     s.superhero_name, 
@@ -58,10 +56,9 @@ GROUP BY
 
 
 ## 2. Counting Superheroes with Each Superpower
-### Question:
+### Problem Statement:
 Write a query that returns the list of all superpowers and the sum of superheroes that have this superpower.
 
-### Answer:
 <pre>
 SELECT 
     sp.power_name,
@@ -86,10 +83,9 @@ GROUP BY sp.power_name;
 
 
 ## 3. Finding the Most Prevalent Superpower by Race
-### Question:
+### Problem Statement:
 Write a query to return the list of races and which superpower is the most prevalent in each race of superhero.
 
-### Answer:
 <pre>
 SELECT 
     r.race,
